@@ -1,0 +1,13 @@
+<resources>
+    <!--胡牌区背景色 -->
+    <color name="bg_color_hu">@color/lightskyblue</color>
+    
+    <!-- 标示方位的文本颜色 -->
+    <color name="location_text_color">@color/darkgray</color>
+    
+    <!-- 标示庄/B的文本颜色 -->
+    <color name="banker_text_color">@color/yellow</color>
+    
+    <!-- 标示连庄多少次的文本颜色 -->
+    <color name="banker_count_text_color">@color/black</color>
+</resources>

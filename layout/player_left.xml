@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/wb.game.mahjong"
+    android:id="@+id/left_player_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true">
+
+    <LinearLayout android:orientation="vertical"
+        android:id="@+id/player_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        <LinearLayout android:id="@+id/left_peng_tiles"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <ImageView android:id="@+id/player_icon_left"
+            style="@style/player_icon"
+            android:contentDescription="TODO"/>
+        <TextView android:id="@+id/player_name_left"
+            style="@style/player_name"/>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/player_ignored_type_left"
+                style="@style/ignored_type" />
+
+            <TextView
+                android:id="@+id/banker_left"
+                style="@style/banker_text" />
+            <TextView
+                android:id="@+id/banker_count_left"
+                style="@style/banker_count_text" />
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/left_gang_tiles"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <LinearLayout android:id="@+id/left_chi_tiles"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/left_tiles"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/player_left"
+        android:layout_toEndOf="@id/player_left">
+        <LinearLayout android:id="@+id/left_tile_list"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView style="@style/tile_divider"/>
+        <ImageView android:id="@+id/new_tile_left"
+            android:background="@drawable/bg_left"
+            android:layout_width="@dimen/tile_width_hor"
+            android:layout_height="@dimen/tile_height_hor"
+            android:visibility="gone"
+            android:contentDescription="@string/tile_front_at_left"/>
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/left_hu_tiles"
+        android:orientation="vertical"
+        android:layout_width="@dimen/tile_width_hor"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color_hu"
+        android:layout_toRightOf="@id/left_tiles"
+        android:layout_toEndOf="@id/left_tiles"
+        android:layout_centerVertical="true"/>
+    
+    <!-- 5行 5列 -->
+    <wb.game.mahjong.view.FixedGridLayout
+        android:id="@+id/left_thrown_tiles"
+        android:layout_width="@dimen/left_right_thrown_width"
+        android:layout_height="@dimen/left_right_thrown_height"
+        app:cellWidth="@dimen/thrown_tile_width_hor"
+        app:cellHeight="@dimen/thrown_tile_height_hor"
+        app:position="3"
+        android:layout_toRightOf="@id/left_hu_tiles"
+        android:layout_toEndOf="@id/left_hu_tiles"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

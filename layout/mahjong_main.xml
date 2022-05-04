@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mahjong_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgreen">
+    
+    <include layout="@layout/prompt_center_layout"/>
+    
+    <include layout="@layout/player_left"/>
+    
+    <include layout="@layout/player_right"/>
+    
+    <include layout="@layout/player_top"/>
+    
+    <include layout="@layout/player_bottom"/>
+    
+    <LinearLayout
+        android:id="@+id/info_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tile_remaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/floralwhite"/>
+
+        <TextView
+            android:id="@+id/gang_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:textSize="8sp"
+            android:visibility="gone"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/button_start_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/game_start"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/button_end_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/game_end"
+            android:visibility="gone" 
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

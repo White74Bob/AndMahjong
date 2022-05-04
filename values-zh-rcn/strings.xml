@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">俺麻将</string>
+    <string name="action_settings">设置</string>
+    <string name="about">关于&#8230;</string>
+    <string name="about_text">
+        \n俺麻将1.0版\n
+        \n版权所有 (&#169;) 2017 \n
+        \n免费使用.\n\n
+        Email: bwbwb@sina.com
+    </string>
+    
+    <string-array name="dummy_player_names">
+        <item>老马,0</item>
+        <item>陈厅,0</item>
+        <item>阿春,1</item>
+        <item>总统,0</item>
+        <item>姜斌,0</item>
+        <item>殿电,0</item>
+        <item>麻子,0</item>
+        <item>嘉括,0</item>
+    </string-array>
+    
+    <string name="tile_match_all">混</string>
+    <string name="tile_wu_kui">魁</string>
+    
+    <string name="games">打法</string>
+    <string name="more">更多&#8230;</string>
+    <string name="game_blood_river">血流成河</string>
+    <string name="game_flower_after_gang">杠后花</string>
+    <string name="game_blood_battle">血战到底</string>
+    <string name="game_tuidaohu">推倒胡</string>
+    <string name="game_beijing">北京麻将</string>
+    
+    <string name="format_remaining_tile_num">牌%d</string>
+    
+    <string name="game_introduction">介绍</string>
+    <string name="game_settings">设置</string>
+    
+    <string name="dir_east">东</string>
+    <string name="dir_south">南</string>
+    <string name="dir_west">西</string>
+    <string name="dir_north">北</string>
+    
+    <string name="scan_players">扫描玩家</string>
+    <string name="connect_player">连接玩家</string>
+    <string name="format_players_num">玩家[%d]</string>
+    <string name="format_connected_players_num">玩家[%1$d/%2$d]</string>
+    <string name="prompt_empty_ip">IP不能为空!</string>
+    <string name="prompt_same_local_ip">请输入另一个IP地址!\n不能是本地地址!</string>
+ 
+    <!-- 蓝牙相关 -->
+    <string name="bluetooth_name">蓝牙名称</string>
+    <string name="bluetooth_addr">蓝牙地址</string>
+    <string name="open_bluetooth">打开蓝牙</string>
+    <string name="close_bluetooth">关闭蓝牙</string>
+    <string name="prompt_disable_bluetooth">确认关闭蓝牙?</string>
+    <string name="rename_bluetooth">重命名</string>
+    <string name="scanning_bluetooth_players">正在扫描蓝牙玩家&#8230;</string>
+    <string name="prompt_after_scan_no_bluetooth_players">扫描结束! 未发现蓝牙玩家!</string>
+    <string name="prompt_bluetooth_not_supported">此设备不支持蓝牙!\n因此只能和dummy玩家玩。</string>
+    <string name="prompt_bluetooth_not_enabled">蓝牙没有开启!\n因此只能和自动玩家玩。</string>
+    
+    <!-- Wifi相关 -->
+    <string name="wifi_name">名称</string>
+    <string name="wifi_signal_strength">信号强度</string>
+    <string name="open_wifi">打开Wifi</string>
+    <string name="scanning_wifi_players">正在扫描WiFi玩家&#8230;</string>
+    <string name="prompt_after_scan_no_wifi_players">扫描结束! 未发现WIFI玩家!</string>
+    <string name="prompt_wifi_not_enabled">Wifi未开!\n因此只能和自动玩家玩。</string>
+    
+    <!-- 热点相关 -->
+    <string name="set_as_hotspot">设为热点</string>
+    <string name="prompt_close_hotspot">确定关闭热点?</string>
+    <string name="close_hotspot">关闭热点</string>
+    <string name="rename_hotspot">重命名</string>
+    <string name="scanning_hotspot_players">正在扫描热点玩家&#8230;</string>
+    <string name="prompt_after_scan_no_hotspot_players">扫描结束! 未发现热点玩家!</string>
+    <string name="prompt_hotspot_not_enabled">热点未开启!\n因此只能和自动玩家玩。</string>
+    
+    <string name="connect">连接</string>
+    <string name="disconnect">断开</string>
+    <string name="prompt_disconnect_player">确定断开和%s的连接吗?</string>
+    <string name="agree_play_game">同意</string>
+    <string name="decline_play_game">拒绝</string>
+    <string name="prompt_start_game">%1$s邀请你打%2$s.\n同意还是拒绝?</string>
+    <string name="state_not_connected">未连接.</string>
+    <string name="state_connecting">连接中&#8230;</string>
+    <string name="state_disconnecting">正在断开连接&#8230;</string>
+    <string name="state_connected">已连接.</string>
+    <string name="state_connect_failed">连接失败.</string>
+    <string name="state_connected_obtaining_info">已连接.正在获得用户信息&#8230;</string>
+    <string name="prompt_max_3_remote_players">最多可选3个远程玩家! 最早的玩家将被去掉.</string>
+    
+    <string name="input_ip">IP地址</string>
+    <string name="hint_ip_v4">输入IP v4地址</string>
+    
+    <string name="game_start">开始</string>
+    <string name="game_end">退出</string>
+    <string name="prompt_game_ended">本局结束!</string>
+    <string name="prompt_game_ended_null">本局结束! 荒庄!</string>
+    <string name="prompt_confirm_end_game">确认结束本局吗?</string>
+    <string name="prompt_confirm_quit_game">确认退出游戏吗?</string>
+    
+    <string name="prompt_please_determine_ignored">请定缺&#8230;</string>
+    
+    <string name="label_prompt">提醒</string>
+    <string name="label_error">出错啦!</string>
+    
+    <string name="do_it_later">以后再说</string>
+    
+    <string name="users">用户</string>
+    <string name="prompt_delete_user">确认删除用户\"%s\"?</string>
+    <string name="prompt_user_info_not_set">无用户信息.\n请先\"增加用户\"!</string>
+    <string name="prompt_invalid_user_name">未输入用户名!</string>
+    <string name="prompt_user_name_exists">非法用户名:\n用户名[%s]已存在!</string>
+    <string name="default_username">未命名用户</string>
+    <string name="user_info_config">用户信息</string>
+    <string name="user_name">用户名称</string>
+    <string name="user_gender">性别</string>
+    <string name="user_icon">用户头像</string>
+    <string name="add_user">增加用户</string>
+    <string name="modify_user">修改</string>
+    <string name="delete_user">删除</string>
+    <string name="fail_to_get_filepath_from_uri" formatted="false">从以下uri不能获得文件路径!\n%s\nScheme:%s</string>
+    <string name="rotate_90">旋转90度</string>
+    <string name="gender_male">男</string>
+    <string name="gender_female">女</string>
+    <string name="customize_sound">录制自己的声音</string>
+    <string name="play_sound">播放</string>
+    <string name="record_sound">录制</string>
+    <string name="delete_sound">删除</string>
+    
+    <string name="banker">庄</string>
+    <string name="action_hu">胡</string>
+    <string name="hu_self">自摸</string>
+    <string name="action_gang">杠</string>
+    <string name="action_gang_grab">抢杠</string>
+    <string name="gang_black">暗杠</string>
+    <string name="action_gang_flower">杠上开花</string>
+    <string name="action_peng">碰</string>
+    <string name="action_chi">吃</string>
+    <string name="please_select">请选择</string>
+    <string name="action_ting">听</string>
+    <string name="action_ignore">过</string>
+    <string name="action_determine_ignored">定缺</string>
+    
+    <string name="format_prompt_player_waiting_tile" formatted="false">等待%s判断%s</string>
+    <string name="format_tile_info" formatted="false">%2$s的%1$s</string>
+    <string name="format_gang_count">杠%d</string>
+    <string name="format_tile_info_gang" formatted="false">杠%1$s,摸到 %2$s</string>
+    
+    <!-- Game setting strings -->
+    <string name="check_auto_throw_after_tinged">听牌后自动打牌</string>
+    <string name="check_auto_hu_after_tinged">听牌后自动胡牌</string>
+    <string name="check_auto_hu_self_after_tinged">听牌后自动胡自摸</string>
+    <string name="check_auto_gang_flower">自动杠开</string>
+    <string name="check_feng_available">带风</string>
+    <string name="check_peng_available">允许碰牌</string>
+    <string name="check_only_hu_self">只胡自摸</string>
+    <string name="check_chi_supported">可以吃上家</string>
+    <string name="check_max_gang_3">3杠荒庄</string>
+    <string name="radio_banker_winner">赢家坐庄</string>
+    <string name="radio_banker_next">下家坐庄</string>
+</resources>

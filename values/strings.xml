@@ -1,0 +1,189 @@
+<resources>
+
+    <string name="app_name">AndMahjong</string>
+    <string name="action_settings">Settings</string>
+    <string name="about">About</string>
+    <string name="about_text">
+        \nAndMahjong Version 1.0\n
+        \nCopyright (&#169;) 2017 \n
+        \nFree for use.\n\n
+        Email: bwbwb@sina.com
+    </string>
+    
+    <string-array name="dummy_player_names">
+        <item>Nancy,1</item>
+        <item>Rose Mary,1</item>
+        <item>Amanda,1</item>
+        <item>Betty,1</item>
+        <item>Florence,1</item>
+        <item>Samantha,1</item>
+        <item>Helen,1</item>
+        <item>Jessica,1</item>
+    </string-array>
+    
+    <string name="tile_back_at_bottom">Tile back at bottom</string>
+    <string name="tile_front_at_bottom">Tile front at bottom</string>
+    <string name="tile_front_at_top">Tile front at top</string>
+    <string name="tile_back_at_top">Tile back at top</string>
+    <string name="tile_front_at_left">Tile front at left</string>
+    <string name="tile_back_at_left">Tile back at left</string>
+    <string name="tile_front_at_right">Tile front at right</string>
+    <string name="tile_back_at_right">Tile back at right</string>
+    <string name="tile_match_all">A</string>
+    <string name="tile_wu_kui">K</string>
+    
+    <string name="games">Games</string>
+    <string name="more">More&#8230;</string>
+    <string name="game_blood_river">BloodRiver</string>
+    <string name="game_flower_after_gang">FlowerGANG</string>
+    <string name="game_blood_battle">BloodBattle</string>
+    <string name="game_tuidaohu">TuiDaoHu</string>
+    <string name="game_beijing">北京MJ</string>
+    
+    <string name="format_remaining_tile_num">T:%d</string>
+    
+    <string name="game_introduction">Introduction</string>
+    <string name="game_settings">Settings</string>
+    
+    <string name="tile_tiao">条</string>
+    <string name="tile_tong">筒</string>
+    <string name="tile_wan">萬</string>
+    <string name="tile_feng">风</string>
+    
+    <string name="feng_east">東</string>
+    <string name="feng_west">西</string>
+    <string name="feng_south">南</string>
+    <string name="feng_north">北</string>
+    <string name="feng_zhong">中</string>
+    <string name="feng_fa">發</string>
+    <string name="feng_bai">白板</string>
+    
+    <string name="dir_east">E</string>
+    <string name="dir_south">S</string>
+    <string name="dir_west">W</string>
+    <string name="dir_north">N</string>
+    
+    <string name="scan_players">ScanPlayers</string>
+    <string name="connect_player">ConnectPlayer</string>
+    <string name="format_players_num">Players[%d]</string>
+    <string name="format_connected_players_num">Players[%1$d/%2$d]</string>
+    <string name="prompt_empty_ip">Empty IP not accepted!</string>
+    <string name="prompt_same_local_ip">Please input different IP!\nNOT the local one!</string>
+    
+    <!-- Bluetooth related -->
+    <string name="bluetooth_name">BluetoothName</string>
+    <string name="bluetooth_addr">BluetoothAddress</string>
+    <string name="open_bluetooth">OpenBluetooth</string>
+    <string name="close_bluetooth">CloseBluetooth</string>
+    <string name="prompt_disable_bluetooth">Are you sure to close Bluetooth?</string>
+    <string name="rename_bluetooth">Rename</string>
+    <string name="scanning_bluetooth_players">Scanning bluetooth players&#8230;</string>
+    <string name="prompt_after_scan_no_bluetooth_players">Scanning finished. No Bluetooth players found!</string>
+    <string name="prompt_bluetooth_not_supported">Bluetooth is NOT supported in this device!</string>
+    <string name="prompt_bluetooth_not_enabled">Bluetooth is not enabled.\n Only dummy players are available.</string>
+    
+    <!-- Wifi related -->
+    <string name="wifi_name">Name</string>
+    <string name="wifi_signal_strength">SignalStrength</string>
+    <string name="open_wifi">OpenWifi</string>
+    <string name="scanning_wifi_players">Scanning WiFi players&#8230;</string>
+    <string name="prompt_after_scan_no_wifi_players">Scanning finished. No WIFI players found!</string>
+    <string name="prompt_wifi_not_enabled">Wifi is NOT enabled.\n Only dummy players are available.</string>
+    
+    <!-- Hotspot related -->
+    <string name="set_as_hotspot">SetAsHotSpot</string>
+    <string name="prompt_close_hotspot">Are you sure to close hotspot?</string>
+    <string name="close_hotspot">Close HotSpot</string>
+    <string name="rename_hotspot">Rename</string>
+    <string name="scanning_hotspot_players">Scanning hotspot players&#8230;</string>
+    <string name="prompt_after_scan_no_hotspot_players">Scanning finished. No HotSpot players found!</string>
+    <string name="prompt_hotspot_not_enabled">Hotspot is NOT enabled.\n Only dummy players are available.</string>
+    
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="prompt_disconnect_player">Are you sure to disconnect with %s?</string>
+    <string name="agree_play_game">Agree</string>
+    <string name="decline_play_game">Decline</string>
+    <string name="prompt_start_game">%1$s is inviting you to start game %2$s.\nAgree or decline?</string>
+    <string name="state_not_connected">Not connected.</string>
+    <string name="state_connecting">Connecting&#8230;</string>
+    <string name="state_disconnecting">disconnecting&#8230;</string>
+    <string name="state_connected">Connected.</string>
+    <string name="state_connect_failed">Failed to connect.</string>
+    <string name="state_connected_obtaining_info">Connected. Sending info&#8230;</string>
+    <string name="prompt_max_3_remote_players">Only 3 remote players at most! The earlist one would be un-selected.</string>
+    
+    <string name="input_ip">Input IP</string>
+    <string name="hint_ip_v4">Input ipv4 address</string>
+    
+    <string name="game_start">Start</string>
+    <string name="game_end">Quit</string>
+    <string name="prompt_game_ended">Game over.</string>
+    <string name="prompt_game_ended_null">Game over. No huer!</string>
+    <string name="prompt_confirm_end_game">Are you sure to end the game?</string>
+    <string name="prompt_confirm_quit_game">Are you sure to quit the game?</string>
+    
+    <string name="prompt_please_determine_ignored">Please determine which category of tiles should be ignored&#8230;</string>
+    
+    <string name="label_prompt">Warning</string>
+    <string name="label_error">Error</string>
+    
+    <string name="do_it_later">Do it later</string>
+    
+    <string name="users">Users</string>
+    <string name="prompt_delete_user">Are you sure to delete user \"%s\"?</string>
+    <string name="prompt_user_info_not_set">No user info.\nPlease "Add User" firstly.</string>
+    <string name="prompt_invalid_user_name">No user name input!</string>
+    <string name="prompt_user_name_exists">Invalid username:\nThe username [%s] exists!</string>
+    <string name="default_username">NoName</string>
+    <string name="user_info_config">User info config</string>
+    <string name="user_name">User name</string>
+    <string name="user_gender">User Gender</string>
+    <string name="user_icon">User icon</string>
+    <string name="add_user">New User</string>
+    <string name="modify_user">Modify</string>
+    <string name="delete_user">Delete</string>
+    <string name="fail_to_get_filepath_from_uri" formatted="false">Failed to get filepath from uri.\n%s\nScheme:%s</string>
+    <string name="rotate_90">Rotate90</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="customize_sound">Customize Sound</string>
+    <string name="play_sound">PlaySound</string>
+    <string name="record_sound">Record</string>
+    <string name="delete_sound">DeleteSound</string>
+    
+    <string name="banker">B</string>
+    <string name="action_hu">Hu</string>
+    <string name="hu_self">HuSelf</string>
+    <string name="hu_tian">天胡</string>
+    <string name="hu_di">地胡</string>
+    <string name="hu_ren">人胡</string>
+    <string name="action_gang">Gang</string>
+    <string name="action_gang_grab">GrabGang</string>
+    <string name="action_gang_flower">GangFlower</string>
+    <string name="gang_black">GangBlack</string>
+    <string name="action_peng">Peng</string>
+    <string name="action_chi">Chi</string>
+    <string name="please_select">Please select a set.</string>
+    <string name="action_ting">Ting</string>
+    <string name="action_ignore">Ignore</string>
+    <string name="action_determine_ignored">DetermineIgnored</string>
+    
+    <string name="format_prompt_player_waiting_tile" formatted="false">Waiting for %s on %s</string>
+    <string name="format_tile_info" formatted="false">%1$s from %2$s</string>
+    <string name="format_gang_count">G%d</string>
+    <string name="format_tile_info_gang" formatted="false">Ganged %1$s, got %2$s</string>
+    
+    <!-- Game setting strings -->
+    <string name="check_auto_throw_after_tinged">Automatically throw after Ting</string>
+    <string name="check_auto_hu_after_tinged">Automatically HU after Ting</string>
+    <string name="check_auto_hu_self_after_tinged">Automatically Hu self after Ting</string>
+    <string name="check_auto_gang_flower">Automatically gang flower</string>
+    <string name="check_only_hu_self">Only HU self</string>
+    <string name="check_feng_available">Feng tiles available</string>
+    <string name="check_peng_available">Peng action available</string>
+    <string name="check_chi_supported">Chi supported</string>
+    <string name="check_max_gang_3">Maximum Gang 3 times</string>
+    <string name="radio_banker_winner">WinnerBanker</string>
+    <string name="radio_banker_next">NextBanker</string>
+</resources>

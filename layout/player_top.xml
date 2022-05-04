@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/wb.game.mahjong"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true" >
+    
+    <LinearLayout android:id="@+id/top_tiles"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/new_tile_top"
+            android:visibility="gone"
+            android:background="@drawable/bg_vertical"
+            android:layout_width="@dimen/tile_width_ver"
+            android:layout_height="@dimen/tile_height_ver"
+            android:contentDescription="@string/tile_front_at_top"/>
+        <TextView style="@style/tile_divider"/>
+        <LinearLayout android:id="@+id/top_tile_list"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <ImageView android:id="@+id/player_icon_top"
+            style="@style/player_icon"
+            android:contentDescription="TODO"/>
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView android:id="@+id/player_name_top"
+                style="@style/player_name"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/player_ignored_type_top"
+                    style="@style/ignored_type" />
+
+                <TextView
+                    android:id="@+id/banker_top"
+                    style="@style/banker_text" />
+                <TextView
+                    android:id="@+id/banker_count_top"
+                    style="@style/banker_count_text" />
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/player_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout android:id="@+id/top_gang_tiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+            <LinearLayout android:id="@+id/top_peng_tiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+            <LinearLayout android:id="@+id/top_chi_tiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/top_hu_tiles"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tile_height_ver"
+        android:background="@color/bg_color_hu"
+        android:layout_below="@id/top_tiles"
+        android:layout_centerHorizontal="true"/>
+    
+    <wb.game.mahjong.view.FixedGridLayout
+        android:id="@+id/top_thrown_tiles"
+        android:layout_width="@dimen/bottom_top_thrown_width"
+        android:layout_height="@dimen/bottom_top_thrown_height"
+        app:cellWidth="@dimen/thrown_tile_width_ver"
+        app:cellHeight="@dimen/thrown_tile_height_ver"
+        app:position="2"
+        android:layout_below="@id/top_hu_tiles"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">6dp</dimen>
+    <dimen name="activity_vertical_margin">2dp</dimen>
+
+    <dimen name="table_row_separator_thickness">36sp</dimen>
+    
+    <dimen name="tile_width_hor">27dip</dimen>
+    <dimen name="tile_height_hor">18dip</dimen>
+    <dimen name="tile_width_ver">18dip</dimen>
+    <dimen name="tile_height_ver">27dip</dimen>
+    <dimen name="tile_width_bottom">32dip</dimen>
+    <dimen name="tile_height_bottom">48dip</dimen>
+    <dimen name="tile_width_selected">40dip</dimen>
+    <dimen name="tile_height_selected">60dip</dimen>
+    
+    <dimen name="tile_width_focused_hor">36dip</dimen>
+    <dimen name="tile_height_focused_hor">24dip</dimen>
+    <dimen name="tile_width_focused_ver">24dip</dimen>
+    <dimen name="tile_height_focused_ver">36dip</dimen>
+    
+    <dimen name="peng_tile_width_hor">21dip</dimen>
+    <dimen name="peng_tile_height_hor">14dip</dimen>
+    <dimen name="peng_tile_width_ver">14dip</dimen>
+    <dimen name="peng_tile_height_ver">21dip</dimen>
+    <dimen name="gang_tile_width_hor">21dip</dimen>
+    <dimen name="gang_tile_height_hor">14dip</dimen>
+    <dimen name="gang_tile_width_ver">14dip</dimen>
+    <dimen name="gang_tile_height_ver">21dip</dimen>
+    <dimen name="hu_tile_width_hor">24dip</dimen>
+    <dimen name="hu_tile_height_hor">16dip</dimen>
+    <dimen name="hu_tile_width_ver">16dip</dimen>
+    <dimen name="hu_tile_height_ver">24dip</dimen>
+    <dimen name="hu_view_height_ver">40dip</dimen>
+    <dimen name="thrown_tile_width_hor">27dip</dimen>
+    <dimen name="thrown_tile_height_hor">18dip</dimen>
+    <dimen name="thrown_tile_width_ver">18dip</dimen>
+    <dimen name="thrown_tile_height_ver">27dip</dimen>
+    <!-- 8列(width18 * 8 = 144) 3行(height27 * 3 = 81) -->
+    <dimen name="bottom_top_thrown_width">144dip</dimen>
+    <dimen name="bottom_top_thrown_height">81dip</dimen>
+    <!-- 5行(27*5=135) 5列(18*5=90) -->
+    <dimen name="left_right_thrown_width">135dip</dimen>
+    <dimen name="left_right_thrown_height">90dip</dimen>
+    
+    <dimen name="icon_width">32dip</dimen>
+    <dimen name="icon_height">32dip</dimen>
+    
+    <dimen name="ic_size_volume">20dip</dimen>
+    
+    <dimen name="tile_indicator_thickness">3dip</dimen>
+    
+    <dimen name="location_indicator_thickness">3dp</dimen>
+    <dimen name="location_text_size">17sp</dimen>
+    <dimen name="banker_text_size">12sp</dimen>
+    <dimen name="banker_count_text_size">10sp</dimen>
+</resources>

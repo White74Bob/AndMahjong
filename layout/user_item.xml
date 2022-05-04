@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView android:id="@+id/user_icon"
+            android:contentDescription="@string/user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <TextView android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    
+    <LinearLayout android:background="@color/papayawhip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarStyle"
+        android:layout_alignParentRight="true">
+        <Button android:id="@+id/button_modify_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modify_user"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textSize="14sp"
+            android:focusable="false"/>
+    
+        <Button android:id="@+id/button_delete_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_user"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textSize="14sp"
+            android:focusable="false"/>
+    </LinearLayout>
+
+</RelativeLayout>

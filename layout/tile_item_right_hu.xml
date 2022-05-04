@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/tile_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
+
+    <View
+        android:id="@+id/hued_tile_background"
+        android:layout_width="@dimen/hu_tile_width_hor"
+        android:layout_height="@dimen/hu_tile_height_hor"
+        android:layout_toEndOf="@id/tile_text"
+        android:layout_toRightOf="@id/tile_text" />
+
+    <ImageView
+        android:id="@+id/tile_front"
+        android:layout_width="@dimen/hu_tile_width_hor"
+        android:layout_height="@dimen/hu_tile_height_hor"
+        android:layout_toEndOf="@id/tile_text"
+        android:layout_toRightOf="@id/tile_text"
+        android:background="@drawable/bg_vertical"
+        android:contentDescription="@string/tile_front_at_bottom" />
+
+</RelativeLayout>

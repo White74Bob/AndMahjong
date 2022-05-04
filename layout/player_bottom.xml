@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/wb.game.mahjong"
+    android:id="@+id/bottom_player_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true">
+    
+    <!-- 8列(width14 * 8 = 112) 2行(height21 * 3 = 63) -->
+    <wb.game.mahjong.view.FixedGridLayout
+        android:id="@+id/bottom_thrown_tiles"
+        android:layout_width="@dimen/bottom_top_thrown_width"
+        android:layout_height="@dimen/bottom_top_thrown_height"
+        app:cellWidth="@dimen/thrown_tile_width_ver"
+        app:cellHeight="@dimen/thrown_tile_height_ver"
+        app:position="0"
+        android:layout_gravity="center_horizontal"/>
+    
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout android:orientation="horizontal" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/bottom_chi_tiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:orientation="horizontal" />
+            
+            <LinearLayout android:id="@+id/bottom_peng_tiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/lightblue"
+                android:orientation="horizontal" />
+
+            <LinearLayout android:id="@+id/bottom_gang_tiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/lightgreen"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    
+        <ImageView android:id="@+id/player_icon_bottom"
+            style="@style/player_icon"
+            android:contentDescription="player_icon"/>
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView android:id="@+id/player_name_bottom"
+                style="@style/player_name"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/player_ignored_type_bottom"
+                    style="@style/ignored_type" />
+
+                <TextView
+                    android:id="@+id/banker_bottom"
+                    style="@style/banker_text" />
+                <TextView
+                    android:id="@+id/banker_count_bottom"
+                    style="@style/banker_count_text" />
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/bottom_tile_list"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tile_height_selected"/>
+        
+        <View style="@style/tile_divider"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/new_tile_bottom"
+                android:layout_width="@dimen/tile_width_bottom"
+                android:layout_height="@dimen/tile_height_bottom"
+                android:background="@drawable/bg_vertical"
+                android:contentDescription="@string/tile_front_at_bottom"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tile_match_all_bottom_new"
+                style="@style/tile_match_all" />
+
+            <TextView
+                android:id="@+id/tile_special_bottom_new"
+                style="@style/tile_special"
+                android:layout_alignRight="@id/new_tile_bottom" 
+                android:layout_alignEnd="@id/new_tile_bottom"/>
+        </RelativeLayout>
+
+        <View style="@style/tile_divider"/>
+        
+        <LinearLayout android:id="@+id/bottom_hu_tiles"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tile_height_ver"
+            android:layout_gravity="bottom"
+            android:background="@color/bg_color_hu"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+</LinearLayout>

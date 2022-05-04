@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <View
+        android:id="@+id/tile_indicator_bottom"
+        style="@style/tile_indicator"
+        android:layout_width="@dimen/tile_width_bottom"
+        android:layout_height="@dimen/tile_indicator_thickness" />
+
+    <ImageView
+        android:id="@+id/tile_front"
+        android:layout_width="@dimen/tile_width_bottom"
+        android:layout_height="@dimen/tile_height_bottom"
+        android:layout_below="@id/tile_indicator_bottom"
+        android:background="@drawable/bg_vertical"
+        android:contentDescription="@string/tile_front_at_bottom" />
+
+    <TextView
+        android:id="@+id/tile_text"
+        style="@style/tile_text"
+        android:layout_alignBottom="@id/tile_front"
+        android:layout_alignEnd="@id/tile_front"
+        android:layout_alignRight="@id/tile_front"/>
+    <!-- <TextView
+        android:id="@+id/tile_text"
+        style="@style/tile_text"
+        android:layout_centerInParent="true"/>-->
+    
+    <TextView
+        android:id="@+id/tile_match_all_text"
+        style="@style/tile_match_all"
+        android:layout_alignLeft="@id/tile_front"
+        android:layout_alignStart="@id/tile_front"/>
+    
+    <TextView
+        android:id="@+id/tile_special"
+        style="@style/tile_special"
+        android:layout_alignRight="@id/tile_front"
+        android:layout_alignEnd="@id/tile_front"/>
+
+</RelativeLayout>

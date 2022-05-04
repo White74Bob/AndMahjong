@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/wb.game.mahjong"
+    android:id="@+id/right_player_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true">
+
+    <LinearLayout android:orientation="vertical"
+        android:id="@+id/player_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <LinearLayout android:id="@+id/right_gang_tiles"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <ImageView android:id="@+id/player_icon_right"
+            style="@style/player_icon"
+            android:contentDescription="TODO"/>
+        <TextView android:id="@+id/player_name_right"
+            style="@style/player_name"/>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/player_ignored_type_right"
+                style="@style/ignored_type" />
+
+            <TextView
+                android:id="@+id/banker_right"
+                style="@style/banker_text" />
+            <TextView
+                android:id="@+id/banker_count_right"
+                style="@style/banker_count_text" />
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/right_peng_tiles"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <LinearLayout android:id="@+id/right_chi_tiles"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/right_tiles"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/player_right"
+        android:layout_toStartOf="@id/player_right">
+        <ImageView android:id="@+id/new_tile_right"
+            android:visibility="gone"
+            android:background="@drawable/bg_right"
+            android:layout_width="@dimen/tile_width_hor"
+            android:layout_height="@dimen/tile_height_hor"
+            android:contentDescription="@string/tile_front_at_right"/>
+        <TextView style="@style/tile_divider"/>
+        <LinearLayout android:id="@+id/right_tile_list"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/right_hu_tiles"
+        android:orientation="vertical"
+        android:layout_width="@dimen/tile_width_hor"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color_hu"
+        android:layout_toLeftOf="@id/right_tiles"
+        android:layout_toStartOf="@id/right_tiles"
+        android:layout_centerVertical="true"/>
+        
+    <!-- 5行(21*5=105)5列(14*5=70) -->
+    <wb.game.mahjong.view.FixedGridLayout
+        android:id="@+id/right_thrown_tiles"
+        android:layout_width="@dimen/left_right_thrown_width"
+        android:layout_height="@dimen/left_right_thrown_height"
+        app:cellWidth="@dimen/thrown_tile_width_hor"
+        app:cellHeight="@dimen/thrown_tile_height_hor"
+        app:position="1"
+        android:layout_toLeftOf="@id/right_hu_tiles"
+        android:layout_toStartOf="@id/right_hu_tiles"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

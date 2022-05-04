@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView android:id="@+id/tile_front"
+        android:background="@drawable/bg_vertical"
+        android:layout_width="@dimen/peng_tile_width_ver"
+        android:layout_height="@dimen/peng_tile_height_ver"
+        android:layout_gravity="bottom"
+        android:contentDescription="@string/tile_front_at_bottom"/>
+
+</LinearLayout>

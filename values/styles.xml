@@ -1,0 +1,196 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="player_name" parent="android:Theme.Black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    
+    <style name="player_icon" parent="android:Theme.Black">
+        <item name="android:layout_width">@dimen/icon_width</item>
+        <item name="android:layout_height">@dimen/icon_height</item>
+        <item name="android:contentDescription">player icon</item>
+    </style>
+    
+    <style name="ignored_type">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/darkblue</item>
+        <item name="android:background">@color/lightgray</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+    
+    <style name="location_indicator">
+        <item name="android:visibility">invisible</item>
+        <item name="android:background">@color/yellow</item>
+    </style>
+    
+    <style name="bluetooth_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">1sp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    
+    <style name="player_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">1sp</item>
+        <item name="android:layout_margin">1dip</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    
+    <style name="player_score" parent="android:Theme.Light">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@color/darkgray</item>
+    </style>
+    
+    <style name="tile_type_prompt">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="tile_indicator">
+        <item name="android:visibility">gone</item>
+        <item name="android:background">@color/blue</item>
+    </style>
+    
+    <style name="action_prompt_1">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/lightblue</item>
+    </style>
+    
+    <style name="action_prompt_2">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/lightgreen</item>
+    </style>
+    
+    <style name="action_prompt_4">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/lightgoldenrodyellow</item>
+    </style>
+    
+    <style name="tile_divider">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">10dp</item>
+    </style>
+    
+    <style name="view_divider">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+    </style>
+    
+    <style name="location_text_horizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/location_text_size</item>
+        <item name="android:textColor">@color/location_text_color</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    
+    <style name="location_text_vertical">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/location_text_size</item>
+        <item name="android:textColor">@color/location_text_color</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    
+    <style name="banker_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/banker_text_size</item>
+        <item name="android:textColor">@color/banker_text_color</item>
+        <item name="android:text">@string/banker</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+    
+    <style name="banker_count_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/banker_count_text_size</item>
+        <item name="android:textColor">@color/banker_count_text_color</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    
+    <style name="game_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+    
+    <style name="tile_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+    
+    <style name="tile_match_all">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/tile_match_all</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    
+    <style name="tile_special">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/tile_wu_kui</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:visibility">gone</item>
+    </style>
+</resources>

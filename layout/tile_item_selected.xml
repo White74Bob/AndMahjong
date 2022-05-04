@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView android:id="@+id/tile_front"
+        android:background="@drawable/bg_vertical"
+        android:layout_width="@dimen/tile_width_selected"
+        android:layout_height="@dimen/tile_height_selected"
+        android:contentDescription="@string/tile_front_at_bottom"/>
+
+</LinearLayout>
